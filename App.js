@@ -10,7 +10,7 @@ app.use(urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://disability-and-motherhood-hhh9.onrender.com",
+    origin: "https://www.disabilityandmotherhood.com",
     credentials: true,
     optionsSuccessStatus: 200,
   })
