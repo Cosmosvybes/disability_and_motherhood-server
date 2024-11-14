@@ -8,14 +8,8 @@ const cors = require("cors");
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
 
-app.use(
-  cors({
-    origin: "https://www.disabilityandmotherhood.com",
-    credentials: true,
-    optionsSuccessStatus: 200,
-  })
-);
-
+app.use(cors());
+// https://www.disabilityandmotherhood.com
 app.use("/api", routes);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
