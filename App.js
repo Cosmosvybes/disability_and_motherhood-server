@@ -10,7 +10,7 @@ app.use(urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://disabilityandmotherhood.com",
     credentials: true,
     optionsSuccessStatus: 200,
   })

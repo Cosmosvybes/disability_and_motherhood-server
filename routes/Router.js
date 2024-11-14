@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post(
   "/field-research-updates/new/post",
-  Auth,
+  // Auth,
   localFileUploader.single("postImage"),
   createPost
 );
